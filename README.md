@@ -1,104 +1,165 @@
 # Voice-assistant-project
 
 
- Menu
+ 
+Navigation Menu
+Copilot
 
-Code
-Issues
-20
-Pull requests
-1
-BreadcrumbsJARVIS
-/README.md
-Latest commit
-Gladiator07
-Gladiator07
-4 years ago
-History
-94 lines (75 loc) · 4.04 KB
-File metadata and controls
+Copilot Chat
+Latest Open Issues in React Repository
+Get a list of the latest open issues in the facebook/react repository, including all their labels.
+Here are some of the latest open issues in the facebook/react repository:
 
-Preview
+Bug: React 18 (18.2.0) skips renders in Safari even when props change
 
-Code
+Labels: Status: Unconfirmed
+Created at: 2023-04-24
+Updated at: 2025-01-07
+Comments: 27
+User: evanbernstein
+Description: React 18 in Safari is not rendering every render call when the props have changed. This behavior is not reproducible in React 17 or in React 18 with Firefox or Chrome.
+Bug: element.current.scrollIntoView() not working as expected in chrome
 
-Blame
-JARVIS (Just a Rather Very Intelligent System)
-This was my attempt to make a voice assistant similar to JARVIS (in iron man movie)
-Let's be honest, it's not as intelligent as in the movie, but it can do a lot of cool things and automate your daily tasks you do on your personal computers/laptops.
-Built with
+Labels: Component: DOM, Status: Unconfirmed, Resolution: Needs More Information
+Created at: 2022-03-02
+Updated at: 2025-01-07
+Comments: 31
+User: karthik2265
+Description: The scrollIntoView() function works as expected in Edge and Firefox but behaves weirdly in Chrome.
+Bug:
 
+Labels: Status: Unconfirmed
+Created at: 2025-01-07
+Updated at: 2025-01-07
+Comments: 1
+User: sonsaker1
+Description: (No detailed description provided)
+Use valid CSS selectors in useId format
 
-Features
-For a cool demo of this project watch this YouTube video
-It can do a lot of cool things, some of them being:
+Labels: CLA Signed, React Core Team
+Created at: 2025-01-07
+Updated at: 2025-01-07
+Comments: 5
+User: sebmarkbage
+[Fiber] Suspend the commit while we wait for the previous View Transition to finish
 
-Greet user
-Tell current time and date
-Launch applications/softwares
-Open any website
-Tells about weather of any city
-Open location of any place plus tells the distance between your place and queried place
-Tells your current system status (RAM Usage, battery health, CPU usage)
-Tells about your upcoming events (Google Calendar)
-Tells about any person (via Wikipedia)
-Can search anything on Google
-Can play any song on YouTube
-Tells top headlines (via Times of India)
-Plays music
-Send email (with subject and content)
-Calculate any mathematical expression (example: Jarvis, calculate x + 135 - 234 = 345)
-Answer any generic question (via Wolframalpha)
-Take important note in notepad
-Tells a random joke
-Tells your IP address
-Can switch the window
-Can take screenshot and save it with custom filename
-Can hide all files in a folder and also make them visible again
-Has a cool Graphical User Interface
-API Keys
-To run this program you will require a bunch of API keys. Register your API key by clicking the following links
+Labels: CLA Signed, React Core Team
+Created at: 2025-01-07
+Updated at: 2025-01-07
+Comments: 2
+User: sebmarkbage
+Add Component
 
-OpenWeatherMap API
-Wolframalpha
-Google Calendar API
-Installation
-First clone the repo
-Make a config.py file and include the following in it:
-_________
-email = "<your_email>"
-email_password = "<your_email_password>"
-wolframalpha_id = "<your_wolframalpha_id>"
+Labels: CLA Signed, React Core Team
+Created at: 2025-01-04
+Updated at: 2025-01-07
+Comments: 5
+User: sebmarkbage
 
-___________
-Copy the config.py file in Jarvis>config folder
-Make a new python environment If you are using anaconda just type conda create -n jarvis python==3.8.5  in anaconda prompt
-To activate the environment conda activate jarvis
-Navigate to the directory of your project
-Install all the requirements by just hitting pip install -r requirements.txt
-Install PyAudio from wheel file by following instructions given here
-Run the program by python main.py
-Enjoy !!!!
-Code Structure
-├── driver
-├── Jarvis       
-# Main folder for features 
+Labels: Type: Feature Request, Component: DOM, HTML
+Created at: 2017-08-04
+Updated at: 2025-01-07
+Comments: 92
+User: elrumordelaluz
+Description: React does not guarantee that a muted attribute will be set on a <video /> element when explicitly passed.
+[Fiber] Require group="normal" on all ViewTransition components
 
-│   ├── config       
+Labels: CLA Signed, React Core Team
+Created at: 2025-01-06
+Updated at: 2025-01-06
+Comments: 2
+User: sebmarkbage
+[Fiber] Use className on to assign view-transition-class
 
-# Contains all secret API Keys
-│   ├── features      
+Labels: CLA Signed, React Core Team
+Created at: 2025-01-06
+Updated at: 2025-01-06
+Comments: 2
+User: sebmarkbage
+[compiler] Early sketch of ReactiveIR
 
-# All functionalities of JARVIS 
+Labels: CLA Signed, React Core Team
+Created at: 2025-01-04
+Updated at: 2025-01-06
+Comments: 1
+User: josephsavona
+For more details and additional issues, you can visit the facebook/react issues page.
 
-│   └── utils           # GUI images
-├── __init__.py         # Definition of feature's functions
-├── gui.ui              # GUI file (in .ui format)
-├── main.py             # main driver program of Jarvis
-├── requirements.txt    # all dependencies of the program
-The code structure if pretty simple. The code is completely modularized and is highly customizable
-To add a new feature:
-Make a new file in features folder, write the feature's function you want to include
-Add the function's definition to init.py
-Add the voice commands through which you want to invoke the function
-Contribute
+How to make voice assistant
+Creating a voice assistant involves several components including speech recognition, natural language processing (NLP), and speech synthesis. Below is a simple example of how you can create a basic voice assistant using Python with the help of libraries like speech_recognition for speech-to-text, pyttsx3 for text-to-speech, and nltk for basic NLP.
+
+Step-by-Step Guide:
+1. Install Required Libraries
+First, you need to install the necessary libraries. You can do this using pip:
+
+pip install SpeechRecognition pyttsx3 nltk
+2. Import Libraries and Initialize Components
+Python
+import speech_recognition as sr
+import pyttsx3
+import nltk
+
+# Initialize the recognizer and the text-to-speech engine
+recognizer = sr.Recognizer()
+tts_engine = pyttsx3.init()
+3. Function to Convert Speech to Text
+Python
+def listen():
+    with sr.Microphone() as source:
+        print("Listening...")
+        recognizer.adjust_for_ambient_noise(source)
+        audio = recognizer.listen(source)
+
+    try:
+        print("Recognizing...")
+        text = recognizer.recognize_google(audio)
+        print(f"User said: {text}")
+        return text
+    except sr.UnknownValueError:
+        print("Sorry, I did not understand that.")
+        return ""
+    except sr.RequestError:
+        print("Could not request results; check your network connection.")
+        return ""
+4. Function to Convert Text to Speech
+Python
+def speak(text):
+    tts_engine.say(text)
+    tts_engine.runAndWait()
+5. Main Function to Handle Commands
+Python
+def handle_command(command):
+    if "hello" in command:
+        speak("Hello! How can I help you today?")
+    elif "your name" in command:
+        speak("I am your personal voice assistant.")
+    elif "time" in command:
+        from datetime import datetime
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        speak(f"The current time is {current_time}")
+    else:
+        speak("Sorry, I did not understand that command.")
+6. Putting It All Together
+Python
+if __name__ == "__main__":
+    nltk.download('punkt')
+    speak("Initializing voice assistant...")
+    while True:
+        command = listen().lower()
+        if command == "":
+            continue
+        if "exit" in command or "quit" in command:
+            speak("Goodbye!")
+            break
+        handle_command(command)
+Explanation:
+Speech Recognition (speech_recognition): This library is used to capture audio from the microphone and convert it to text using Google's speech recognition API.
+Text-to-Speech (pyttsx3): This library converts text to speech, allowing the assistant to respond vocally.
+Natural Language Processing (nltk): This library is used for processing and understanding natural language. In this example, it is used minimally but can be expanded for more complex NLP tasks.
+Usage:
+Run the script.
+The assistant will start listening for commands.
+You can say commands like "hello," "what is your name," "what is the time," etc.
+To exit, you can say "exit" or "quit."
+This is a basic example to get you started. You can expand the functionality by adding more complex NLP processing, integrating with APIs for additional features, and improving the speech recognition accuracy.
