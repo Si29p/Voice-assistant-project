@@ -1,7 +1,7 @@
 # Voice-assistant-project
 
 
-Navigation Menu
+ Menu
 
 Code
 Issues
@@ -65,9 +65,12 @@ Google Calendar API
 Installation
 First clone the repo
 Make a config.py file and include the following in it:
+_________
 email = "<your_email>"
 email_password = "<your_email_password>"
 wolframalpha_id = "<your_wolframalpha_id>"
+
+___________
 Copy the config.py file in Jarvis>config folder
 Make a new python environment If you are using anaconda just type conda create -n jarvis python==3.8.5  in anaconda prompt
 To activate the environment conda activate jarvis
@@ -78,9 +81,16 @@ Run the program by python main.py
 Enjoy !!!!
 Code Structure
 ├── driver
-├── Jarvis              # Main folder for features 
-│   ├── config          # Contains all secret API Keys
-│   ├── features        # All functionalities of JARVIS 
+├── Jarvis       
+# Main folder for features 
+
+│   ├── config       
+
+# Contains all secret API Keys
+│   ├── features      
+
+# All functionalities of JARVIS 
+
 │   └── utils           # GUI images
 ├── __init__.py         # Definition of feature's functions
 ├── gui.ui              # GUI file (in .ui format)
