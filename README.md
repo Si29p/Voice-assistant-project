@@ -102,12 +102,3 @@ Make a new file in features folder, write the feature's function you want to inc
 Add the function's definition to init.py
 Add the voice commands through which you want to invoke the function
 Contribute
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests.
-
-License
-This project is licensed under MIT License 2021 Atharva Ingle
-
-Future Improvements
-Generalized conversations can be made possible by incorporating Natural Language Processing
-GUI can be made more nicer to look at and functional
-More functionalities can be added
